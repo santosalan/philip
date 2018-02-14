@@ -3,11 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\System;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
 class UsersController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -42,9 +54,9 @@ class UsersController extends Controller
      */
     public function create()
     {
-        
+        $systems = System::pluck('title', 'id');
 
-        return view('users.form');
+        return view('users.form', compact('systems'));
     }
 
     /**
@@ -55,14 +67,18 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        User::create($request->all());
+        $r = $request->all();
+        $r['password'] = bcrypt($r['password']);
+
+        $user = User::create($r);
+        $user->systems()->attach($r['systems']);
 
         $request->session()->flash(
             'msgSuccess', 
             trans('laravel-crud::alert.stored', ['element' => 'User'])
         );
 
-        return redirect('users/create');
+        return redirect('admin/users/create');
     }
 
     /**
@@ -81,12 +97,12 @@ class UsersController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'User'])
             );
 
-            return redirect('users');
+            return redirect('admin/users');
         }
 
-        
+        $systems = System::pluck('title', 'id');
 
-        return view('users.form', compact('user'));
+        return view('users.form', compact('user', 'systems'));
     }
 
     /**
@@ -98,16 +114,18 @@ class UsersController extends Controller
      */
     public function update($id, Request $request)
     {
-        $user = User::findOrFail($id);
+        $r = $request->all();
 
-        $user->update($request->all());
+        $user = User::findOrFail($id);
+        $user->update($r);
+        $user->systems()->sync($r['systems']);
 
         $request->session()->flash(
             'msgSuccess', 
             trans('laravel-crud::alert.updated', ['element' => 'User'])
         );
 
-        return redirect('users');
+        return redirect('admin/users');
     }
 
     /**
@@ -126,7 +144,7 @@ class UsersController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'User'])
             );
 
-            return redirect('users');
+            return redirect('admin/users');
         }
 
         return view('users.show', compact('user'));
@@ -157,6 +175,6 @@ class UsersController extends Controller
             );
         }
 
-        return redirect('users');
+        return redirect('admin/users');
     }
 }

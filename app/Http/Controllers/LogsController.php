@@ -9,6 +9,17 @@ use Illuminate\Support\Facades\Validator;
 
 class LogsController extends Controller
 {
+ 
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -67,7 +78,7 @@ class LogsController extends Controller
             trans('laravel-crud::alert.stored', ['element' => 'Log'])
         );
 
-        return redirect('logs/create');
+        return redirect('admin/logs/create');
     }
 
     /**
@@ -86,7 +97,7 @@ class LogsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'Log'])
             );
 
-            return redirect('logs');
+            return redirect('admin/logs');
         }
 
         $systems = System::pluck('title', 'id');
@@ -112,7 +123,7 @@ class LogsController extends Controller
             trans('laravel-crud::alert.updated', ['element' => 'Log'])
         );
 
-        return redirect('logs');
+        return redirect('admin/logs');
     }
 
     /**
@@ -131,7 +142,7 @@ class LogsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'Log'])
             );
 
-            return redirect('logs');
+            return redirect('admin/logs');
         }
 
         return view('logs.show', compact('log'));
@@ -162,6 +173,6 @@ class LogsController extends Controller
             );
         }
 
-        return redirect('logs');
+        return redirect('admin/logs');
     }
 }

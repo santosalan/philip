@@ -53,24 +53,24 @@ Route::prefix('admin')->group(function () {
     /**
      * Usuarios
      */
-    Route::get('users', 'UsuariosController@index');
-    Route::get('users/create', 'UsuariosController@create');
-    Route::get('users/{id}', 'UsuariosController@show');
-    Route::get('users/{id}/edit', 'UsuariosController@edit');
-    Route::post('users/store', 'UsuariosController@store');
-    Route::patch('users/{id}', 'UsuariosController@update');
-    Route::delete('users/{id}', 'UsuariosController@destroy');
+    Route::get('users', 'UsersController@index');
+    Route::get('users/create', 'UsersController@create');
+    Route::get('users/{id}', 'UsersController@show');
+    Route::get('users/{id}/edit', 'UsersController@edit');
+    Route::post('users/store', 'UsersController@store');
+    Route::patch('users/{id}', 'UsersController@update');
+    Route::delete('users/{id}', 'UsersController@destroy');
 
     /**
      * Sistemas
      */
-    Route::get('systems', 'SistemasController@index');
-    Route::get('systems/create', 'SistemasController@create');
-    Route::get('systems/{id}', 'SistemasController@show');
-    Route::get('systems/{id}/edit', 'SistemasController@edit');
-    Route::post('systems/store', 'SistemasController@store');
-    Route::patch('systems/{id}', 'SistemasController@update');
-    Route::delete('systems/{id}', 'SistemasController@destroy');
+    Route::get('systems', 'SystemsController@index');
+    Route::get('systems/create', 'SystemsController@create');
+    Route::get('systems/{id}', 'SystemsController@show');
+    Route::get('systems/{id}/edit', 'SystemsController@edit');
+    Route::post('systems/store', 'SystemsController@store');
+    Route::patch('systems/{id}', 'SystemsController@update');
+    Route::delete('systems/{id}', 'SystemsController@destroy');
 
     /**
      * Logs

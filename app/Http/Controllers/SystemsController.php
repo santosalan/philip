@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\System;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -43,9 +44,9 @@ class SystemsController extends Controller
      */
     public function create()
     {
-        
+        $users = User::pluck('name', 'id');
 
-        return view('systems.form');
+        return view('systems.form', compact('users'));
     }
 
     /**
@@ -56,14 +57,17 @@ class SystemsController extends Controller
      */
     public function store(Request $request)
     {
-        System::create($request->all());
+        $r = $request->all();
+
+        $system = System::create($r);
+        $system->users()->attach($r['users']);
 
         $request->session()->flash(
             'msgSuccess', 
             trans('laravel-crud::alert.stored', ['element' => 'System'])
         );
 
-        return redirect('systems/create');
+        return redirect('admin/systems/create');
     }
 
     /**
@@ -82,12 +86,12 @@ class SystemsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'System'])
             );
 
-            return redirect('systems');
+            return redirect('admin/systems');
         }
 
-        
+        $users = User::pluck('name', 'id');
 
-        return view('systems.form', compact('system'));
+        return view('systems.form', compact('system', 'users'));
     }
 
     /**
@@ -99,16 +103,18 @@ class SystemsController extends Controller
      */
     public function update($id, Request $request)
     {
+        $r = $request->all();
+        
         $system = System::findOrFail($id);
-
-        $system->update($request->all());
+        $system->update($r);
+        $system->users()->sync($r['users']);
 
         $request->session()->flash(
             'msgSuccess', 
             trans('laravel-crud::alert.updated', ['element' => 'System'])
         );
 
-        return redirect('systems');
+        return redirect('admin/systems');
     }
 
     /**
@@ -127,7 +133,7 @@ class SystemsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'System'])
             );
 
-            return redirect('systems');
+            return redirect('admin/systems');
         }
 
         return view('systems.show', compact('system'));

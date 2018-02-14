@@ -8,6 +8,17 @@ use Illuminate\Support\Facades\Validator;
 
 class AdminsController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -55,14 +66,17 @@ class AdminsController extends Controller
      */
     public function store(Request $request)
     {
-        Admin::create($request->all());
+        $r = $request->all();
+        $r['password'] = bcrypt($r['password']);
+
+        Admin::create($r);
 
         $request->session()->flash(
             'msgSuccess', 
             trans('laravel-crud::alert.stored', ['element' => 'Admin'])
         );
 
-        return redirect('admins/create');
+        return redirect('admin/admins/create');
     }
 
     /**
@@ -81,10 +95,8 @@ class AdminsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'Admin'])
             );
 
-            return redirect('admins');
+            return redirect('admin/admins');
         }
-
-        
 
         return view('admins.form', compact('admin'));
     }
@@ -107,7 +119,7 @@ class AdminsController extends Controller
             trans('laravel-crud::alert.updated', ['element' => 'Admin'])
         );
 
-        return redirect('admins');
+        return redirect('admin/admins');
     }
 
     /**
@@ -126,7 +138,7 @@ class AdminsController extends Controller
                 trans('laravel-crud::alert.not-found', ['element' => 'Admin'])
             );
 
-            return redirect('admins');
+            return redirect('admin/admins');
         }
 
         return view('admins.show', compact('admin'));
@@ -157,6 +169,6 @@ class AdminsController extends Controller
             );
         }
 
-        return redirect('admins');
+        return redirect('admin/admins');
     }
 }

@@ -145,12 +145,12 @@ return [
         ],
         [
             'text' => 'Sistemas',
-            'url'  => 'admin/sistemas',
+            'url'  => 'admin/systems',
             'icon' => 'globe',
         ],
         [
             'text' => 'Usuários',
-            'url'  => 'admin/usuarios',
+            'url'  => 'admin/users',
             'icon' => 'users',
         ],
         [

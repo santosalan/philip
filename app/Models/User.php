@@ -3,11 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Database\Eloquent\Model;
+use App\Notifications\Access\ResetPasswordNotification;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Model
+class User extends Authenticatable
 {
     use Notifiable;
+
+    protected $guard = 'access';
 
     /**
      * The table associated with the model.
@@ -45,7 +48,7 @@ class User extends Model
      * @var array
      */
     protected $hidden = [
-        
+        'password', 'remember_token',
     ];
 
     /**
@@ -65,9 +68,6 @@ class User extends Model
     protected $dates = [
         
     ];
-
-    
-    
     
     /**
      * System
@@ -77,6 +77,17 @@ class User extends Model
     public function systems()
     {
         return $this->belongsToMany('App\Models\System', 'system_user', 'user_id', 'system_id');
+    }
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
     }
     
 }
