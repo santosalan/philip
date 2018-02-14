@@ -7,10 +7,17 @@
 
 @section('body_class', 'login-page')
 
+@php
+    $guard = str_contains(url()->current(),'admin') ? 'admin' : 'access';
+@endphp
+
 @section('body')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
+            <img src="{{ asset('img/mm-logo.png') }}" style="max-width: 100%;" />
+            <span class="clearfix"></span>
+            <br/>
+            <a href="{{ url(config('adminlte.' . $guard . '.dashboard_url', 'home')) }}">{!! config('adminlte.' . $guard . '.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
@@ -20,7 +27,8 @@
                     {{ session('status') }}
                 </div>
             @endif
-            <form action="{{ url(config('adminlte.password_email_url', 'password/email')) }}" method="post">
+
+            <form action="{{ url(config('adminlte.' . $guard . '.password_email_url', (str_contains(url()->current(),'admin') ? 'admin' : 'access') . '/password/email')) }}" method="post">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">

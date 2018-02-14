@@ -1,0 +1,802 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ta",
+				"tables"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"obj",
+				"objTable"
+			],
+			[
+				"fiel",
+				"field"
+			],
+			[
+				"P",
+				"Pluralizer"
+			],
+			[
+				"belongs",
+				"belongsTo"
+			],
+			[
+				"belo",
+				"belongsTo"
+			],
+			[
+				"au",
+				"autoIncrement"
+			],
+			[
+				"pmodels",
+				"pathModels"
+			],
+			[
+				"pl",
+				"plucks"
+			],
+			[
+				"validators",
+				"validators"
+			],
+			[
+				"arq",
+				"arqs"
+			],
+			[
+				"path",
+				"pathModel"
+			],
+			[
+				"uc",
+				"ucwords"
+			],
+			[
+				"uns",
+				"unsigned"
+			],
+			[
+				"ob",
+				"objField"
+			],
+			[
+				"array",
+				"array_push"
+			],
+			[
+				"DB",
+				"DB::select\tRun a select statement against the database."
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"va",
+				"validator"
+			],
+			[
+				"valid",
+				"Validation"
+			],
+			[
+				"array_",
+				"array_push"
+			],
+			[
+				"Date",
+				"date_diff"
+			],
+			[
+				"msgSu",
+				"msgSucesso"
+			],
+			[
+				"funcion",
+				"funcionario"
+			],
+			[
+				"Session",
+				"Session::flash\tFlash an Item in the Session"
+			],
+			[
+				"Schema",
+				"Schema::hasTable\tCheck for existence of table"
+			],
+			[
+				"Route",
+				"Route::post\tBasic Post Route."
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"command",
+				"Preferences: Terminal View: Palette Commands"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"termin",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"Package Contro",
+				"Package Control: Install Package"
+			],
+			[
+				"temin",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 703.0
+	},
+	"console":
+	{
+		"height": 414.0,
+		"history":
+		[
+			"$bash",
+			"bash",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/usuario/repo/philip"
+	],
+	"file_history":
+	[
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/controller.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/form.blade.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/show.blade.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/index.blade.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/resources/lang/pt-br/view.php",
+		"/home/usuario/repo/santosalan/laravel-crud/resources/lang/en/view.php",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/CrudMakeCommand.php",
+		"/home/usuario/repo/global-auth/app/Http/Controllers/SistemasController.php",
+		"/home/usuario/repo/global-auth/resources/views/sistemas/form.blade.php",
+		"/home/usuario/repo/global-auth/resources/views/sistemas/show.blade.php",
+		"/home/usuario/repo/global-auth/resources/views/sistemas/index.blade.php",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/pivot.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/ServiceProvider.php",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/routes.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/belongs.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/one.stub",
+		"/home/usuario/repo/global-auth/vendor/santosalan/laravel-crud/src/ServiceProvider.php",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/model.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/many.stub",
+		"/home/usuario/repo/santosalan/laravel-crud/src/Console/Commands/stubs/belongsMany.stub",
+		"/home/usuario/repo/mktpi/resources/views/usuarios/form.blade.php",
+		"/home/usuario/repo/mktpi/resources/views/estados/index.blade.php",
+		"/home/usuario/repo/crudtest/routes/web.php",
+		"/home/usuario/repo/mktpi/resources/views/estados/form.blade.php",
+		"/home/usuario/repo/mktpi/resources/views/estados/show.blade.php",
+		"/home/usuario/repo/portal-rh/routes/web.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/composer.json",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/src/ServiceProvider.php",
+		"/home/usuario/repo/crudtest/vendor/santosalan/laravel-crud/src/Console/Commands/stubs/form.blade.stub",
+		"/home/usuario/repo/crudtest/config/app.php",
+		"/home/usuario/repo/santosalan/laravel-crud/composer.json",
+		"/home/usuario/repo/crudtest/vendor/santosalan/laravel-crud/ServiceProvider.php",
+		"/home/usuario/repo/crudtest/vendor/santosalan/laravel-crud/src/Console/Commands/CrudMakeCommand.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/src/Console/MakeAdminLteCommand.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/src/Console/AdminLteMakeCommand.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/LICENSE",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/phpunit.xml",
+		"/home/usuario/repo/santosalan/laravel-crud/.gitignore",
+		"/home/usuario/repo/crudtest/.env",
+		"/home/usuario/repo/crudtest/app/Http/Controllers/Controller.php",
+		"/home/usuario/repo/crudtest/resources/views/cidades/form.blade.php",
+		"/home/usuario/repo/crudtest/app/Models/Cidade.php",
+		"/home/usuario/repo/crudtest/app/Http/Controllers/CidadesController.php",
+		"/home/usuario/repo/crudtest/app/Http/Controllers/FuncionariosController.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/index.blade.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/show.blade.php",
+		"/home/usuario/repo/portal-rh/vendor/laravelcollective/html/src/FormBuilder.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/form.blade.php",
+		"/home/usuario/repo/portal-rh/resources/views/home.blade.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/HomeController.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/config/adminlte.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2014_10_12_000000_create_usuarios_table.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2018_01_12_130721_create_funcionarios_table.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/resources/views/register.blade.php",
+		"/home/usuario/repo/portal-rh/resources/views/funcionarios/OLDdetalhar.blade.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/Auth/RegisterController.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Routing/Console/stubs/controller.stub",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/show.blade.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/index.blade.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/form.blade.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/CrudMakeCommand.php",
+		"/home/usuario/Documentos/programando_artisan",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/migration.php",
+		"/home/usuario/repo/portal-rh/app/Models/Cidade.php",
+		"/home/usuario/repo/portal-rh/app/Models/Estado.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/one.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/FuncionariosController.php",
+		"/home/usuario/repo/portal-rh/app/Models/Funcionario.php",
+		"/home/usuario/repo/portal-rh/resources/views/funcionarios/form.blade.php",
+		"/home/usuario/repo/portal-rh/resources/views/funcionarios/index.blade.php",
+		"/home/usuario/repo/portal-rh/resources/views/colaboradores/index.blade.php",
+		"/home/usuario/.config/sublime-text-3/Packages/User/phpcs.sublime-settings",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Support/HtmlString.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Support/Arr.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/FuncionariosController.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/Funcionario.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/CidadesController.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/Cidade.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/Usuario.php",
+		"/home/usuario/repo/portal-rh/app/Models/Usuario.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/model.php",
+		"/home/usuario/repo/portal-rh/.env",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/controller.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/TESTE/UsuariosController.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/Controller.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/model.stub",
+		"/home/usuario/repo/portal-rh/vendor/barryvdh/laravel-ide-helper/src/Console/ModelsCommand.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/home/usuario/.config/sublime-text-3/Packages/Phpcs/phpcs.sublime-settings",
+		"/home/usuario/repo/portal-rh/bootstrap/app.php",
+		"/home/usuario/repo/portal-rh/vendor/league/flysystem/src/Config.php",
+		"/home/usuario/repo/portal-rh/app/Console/Commands/crud-templates/controller",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/resources/views/page.blade.php",
+		"/home/usuario/repo/portal-rh/resources/views/auth/register.blade.php",
+		"/home/usuario/repo/portal-rh/vendor/nesbot/carbon/src/Carbon/Carbon.php",
+		"/home/usuario/repo/portal-rh/app/Http/Controllers/Auth/LoginController.php",
+		"/home/usuario/repo/portal-rh/config/auth.php",
+		"/home/usuario/cc",
+		"/home/usuario/repo/portal-rh/app/Usuario.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php",
+		"/home/usuario/repo/portal-rh/app/Estado.php",
+		"/home/usuario/repo/portal-rh/app/Cidade.php",
+		"/home/usuario/repo/portal-rh/app/Funcionario.php",
+		"/home/usuario/.config/sublime-text-3/Packages/DocBlockr/README.md",
+		"/home/usuario/repo/portal-rh/_ide_helper.php",
+		"/home/usuario/repo/portal-rh/vendor/laravelcollective/html/src/FormFacade.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2018_01_12_130649_create_cidades_table.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2018_01_12_125706_create_estados_table.php",
+		"/home/usuario/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+		"/home/usuario/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/usuario/repo/portal-rh/config/app.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php",
+		"/home/usuario/repo/portal-rh/vendor/phpunit/php-code-coverage/src/Report/Html/Facade.php",
+		"/home/usuario/repo/portal-rh/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php",
+		"/home/usuario/repo/portal-rh/database/migrations/2018_01_17_131441_create_colaboradors_table.php",
+		"/home/usuario/repo/portal-rh/resources/lang/pt-br/validation.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/resources/views/login.blade.php",
+		"/home/usuario/repo/portal-rh/vendor/jeroennoten/laravel-adminlte/resources/lang/pt-br/adminlte.php"
+	],
+	"find":
+	{
+		"height": 63.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/home/usuario/repo/portal-rh"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"btn",
+			"\">\n",
+			"exclamation",
+			"body",
+			"footer",
+			"button",
+			"t",
+			"button",
+			" }}</",
+			"}}</",
+			"estado",
+			"processRoutes",
+			"t",
+			"file",
+			"Funcionarios",
+			"funcionarios",
+			"form",
+			"Funcionarios",
+			"funcionario",
+			"funcionarios",
+			"Funcionários",
+			"->id",
+			"id",
+			"obj",
+			"f",
+			"funcionarios",
+			"t",
+			"display",
+			"processFile",
+			"funcionario",
+			"funcionarios",
+			"Funcionários",
+			"b",
+			"belong",
+			"belongs",
+			"getTemplate",
+			"dates",
+			"fillable",
+			"funcionarios",
+			"protected",
+			"funcionarios",
+			"Funcionario",
+			"'controller'",
+			"arqs['controller']);\n        }\n    }\n",
+			"arqs['controller']);\n        }\n    }",
+			"arqs['controller']);\n        }\n    ",
+			"arqs['controller']);\n        }\n",
+			"arqs['controller']);\n        }",
+			"arqs['controller']);\n        ",
+			"arqs['controller']);\n",
+			"['controller']);",
+			"'controller'",
+			"app_path",
+			"{{{compact}}}",
+			"processMarks",
+			"detalhar",
+			"controller",
+			"funcionario",
+			"funcionarios",
+			"Funcionario",
+			"Funcionarios",
+			"function storage_path(",
+			"pluck",
+			"validation",
+			"pagination",
+			"f",
+			"App",
+			"dt_nascimento",
+			"Funcionario",
+			"funcionario",
+			"Funcionario",
+			"dt_nascimento",
+			"colaboradores",
+			"ColaboradoresController",
+			"colaboradores",
+			"Colaboradores",
+			"colaboradores",
+			"Colaboradores",
+			"colaboradores",
+			"ion",
+			"action",
+			"{!! Form::open(['action' => 'Controller@method']) !!}\n    \n      {!! Form::close() !!}",
+			"glyphicon",
+			"table"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"{{{plural_uc}}}",
+			"{{{plural}}}",
+			"{{{plural_uc}}}",
+			"{{{singular}}}",
+			"{{{plural}}}",
+			"{{{plural_uc}}}",
+			"{{{singular}}}",
+			"{{{plural}}}",
+			"{{{singular}}}",
+			"{{{plural}}}",
+			"{{{plural_uc}}}",
+			"{{{plural}}}",
+			"{{{singular_uc}}}",
+			"{{{singular}}}",
+			"{{{plural}}}",
+			"{{{singular_uc}}}",
+			"{{{plural_uc}}}",
+			"fa"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 61.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "",
+	"project": "philip.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"model",
+				"laravel-crud/src/Console/Commands/stubs/model.stub"
+			],
+			[
+				"vie",
+				"laravel-crud/resources/lang/pt-br/view.php"
+			],
+			[
+				"vi",
+				"laravel-crud/resources/lang/en/view.php"
+			],
+			[
+				"contro",
+				"laravel-crud/src/Console/Commands/stubs/controller.stub"
+			],
+			[
+				"for",
+				"laravel-crud/src/Console/Commands/stubs/form.blade.stub"
+			],
+			[
+				"inde",
+				"laravel-crud/src/Console/Commands/stubs/index.blade.stub"
+			],
+			[
+				"servicep",
+				"laravel-crud/src/ServiceProvider.php"
+			],
+			[
+				"control",
+				"laravel-crud/src/Console/Commands/stubs/controller.stub"
+			],
+			[
+				"show",
+				"laravel-crud/src/Console/Commands/stubs/show.blade.stub"
+			],
+			[
+				"form",
+				"laravel-crud/src/Console/Commands/stubs/form.blade.stub"
+			],
+			[
+				"form.bla.stu",
+				"crudtest/vendor/santosalan/laravel-crud/src/Console/Commands/stubs/form.blade.stub"
+			],
+			[
+				"form.stub",
+				"santosalan/laravel-crud/src/Console/Commands/stubs/form.blade.stub"
+			],
+			[
+				"index.blade",
+				"app/Http/Controllers/TESTE/index.blade.php"
+			],
+			[
+				"index.bla",
+				"app/Console/Commands/crud-templates/index.blade.php"
+			],
+			[
+				"ill/suport/",
+				"vendor/laravel/framework/src/Illuminate/Support/HtmlString.php"
+			],
+			[
+				"i/suport/",
+				"vendor/laravel/framework/src/Illuminate/Support/Pluralizer.php"
+			],
+			[
+				"illumin/supo/",
+				"vendor/laravel/framework/src/Illuminate/Support/Arr.php"
+			],
+			[
+				"funciona",
+				"app/Http/Controllers/TESTE/FuncionariosController.php"
+			],
+			[
+				"funcion",
+				"app/Http/Controllers/FuncionariosController.php"
+			],
+			[
+				"usua",
+				"app/Models/Usuario.php"
+			],
+			[
+				"controstub",
+				"vendor/laravel/framework/src/Illuminate/Routing/Console/stubs/controller.stub"
+			],
+			[
+				"models",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs/model.stub"
+			],
+			[
+				"usuario",
+				"app/Models/Usuario.php"
+			],
+			[
+				"regis",
+				"app/Http/Controllers/Auth/RegisterController.php"
+			],
+			[
+				"passc",
+				"app/Http/Controllers/Auth/ResetPasswordController.php"
+			],
+			[
+				"app",
+				"bootstrap/app.php"
+			],
+			[
+				"ifhelp",
+				"vendor/laravel/framework/src/Illuminate/Foundation/helpers.php"
+			],
+			[
+				"config",
+				"vendor/league/flysystem/src/Config.php"
+			],
+			[
+				"adminlte/page",
+				"vendor/jeroennoten/laravel-adminlte/resources/views/page.blade.php"
+			],
+			[
+				"adminlte/register",
+				"vendor/jeroennoten/laravel-adminlte/resources/views/register.blade.php"
+			],
+			[
+				"regi",
+				"resources/views/auth/register.blade.php"
+			],
+			[
+				"admin",
+				"vendor/jeroennoten/laravel-adminlte/config/adminlte.php"
+			],
+			[
+				"carbon",
+				"vendor/nesbot/carbon/src/Carbon/Carbon.php"
+			],
+			[
+				"register",
+				"app/Http/Controllers/Auth/RegisterController.php"
+			],
+			[
+				"rese",
+				"app/Http/Controllers/Auth/ResetPasswordController.php"
+			],
+			[
+				"auth",
+				"config/auth.php"
+			],
+			[
+				"login",
+				"app/Http/Controllers/Auth/LoginController.php"
+			],
+			[
+				"create_usu",
+				"database/migrations/2014_10_12_000000_create_usuarios_table.php"
+			],
+			[
+				"create_cid",
+				"database/migrations/2018_01_12_130649_create_cidades_table.php"
+			],
+			[
+				"estado",
+				"app/Estado.php"
+			],
+			[
+				"create",
+				"database/migrations/2018_01_12_125706_create_estados_table.php"
+			],
+			[
+				"create_ci",
+				"database/migrations/2018_01_12_130649_create_cidades_table.php"
+			],
+			[
+				"cidade",
+				"app/Cidade.php"
+			],
+			[
+				"create_f",
+				"database/migrations/2018_01_12_130721_create_funcionarios_table.php"
+			],
+			[
+				"index.blad",
+				"resources/views/funcionarios/index.blade.php"
+			],
+			[
+				"home.",
+				"resources/views/home.blade.php"
+			],
+			[
+				"app/http/controllers/",
+				"app/Http/Controllers/Controller.php"
+			],
+			[
+				"hom",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"schema/buil",
+				"vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php"
+			],
+			[
+				"create_funcion",
+				"database/migrations/2018_01_12_130721_create_funcionarios_table.php"
+			],
+			[
+				"create_",
+				"database/migrations/2018_01_17_131441_create_colaboradors_table.php"
+			],
+			[
+				"app/",
+				"app/Usuario.php"
+			],
+			[
+				"cola",
+				"app/Colaborador.php"
+			],
+			[
+				"web.p",
+				"routes/web.php"
+			],
+			[
+				"homecontro",
+				"app/Http/Controllers/HomeController.php"
+			],
+			[
+				"ide_",
+				"_ide_helper.php"
+			],
+			[
+				"autenti",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php"
+			],
+			[
+				"autentica",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php"
+			],
+			[
+				"controll",
+				"app/Http/Controllers/Controller.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/repo/global-auth/global-auth.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

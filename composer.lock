@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19efd7a663bc58433fcbf0504ae52caa",
+    "content-hash": "e2f16be6a58a702a45869d5230bff96e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1377,16 +1377,16 @@
         },
         {
             "name": "santosalan/laravel-crud",
-            "version": "v0.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/santosalan/laravel-crud.git",
-                "reference": "3c42eafc9bb2ff5490cdfef23155a70d7120b105"
+                "reference": "ff49a127f8d651f939eddffa5188e13db957902b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/santosalan/laravel-crud/zipball/3c42eafc9bb2ff5490cdfef23155a70d7120b105",
-                "reference": "3c42eafc9bb2ff5490cdfef23155a70d7120b105",
+                "url": "https://api.github.com/repos/santosalan/laravel-crud/zipball/ff49a127f8d651f939eddffa5188e13db957902b",
+                "reference": "ff49a127f8d651f939eddffa5188e13db957902b",
                 "shasum": ""
             },
             "require": {
@@ -1431,7 +1431,7 @@
                 "laravel",
                 "santosalan"
             ],
-            "time": "2018-02-11T00:42:25+00:00"
+            "time": "2018-02-14T11:55:52+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4128,7 +4128,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "santosalan/laravel-crud": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

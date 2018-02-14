@@ -8,15 +8,44 @@
 
 @section('body_class', 'login-page')
 
+@php
+    $guard = str_contains(url()->current(),'admin') ? 'admin' : 'access';
+@endphp
+
 @section('body')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
+            <img src="{{ asset('img/mm-logo.png') }}" style="max-width: 100%;" />
+            <span class="clearfix"></span>
+            <br/>
+            <a href="{{ url(config('adminlte.' . $guard . '.dashboard_url', 'home')) }}">{!! config('adminlte.' . $guard . '.logo', '<b>Admin</b>LTE') !!}</a>
+            @if (!empty($sistema))
+                </br>
+                <sup>{{ $sistema->title }}</sup>
+            @endif
         </div>
+
+        @if (Session::has('msgSuccess'))
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                {{ Session::get('msgSuccess') }}
+            </div>
+        @elseif (Session::has('msgError'))
+            <div class="alert alert-error alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                {{ Session::get('msgError') }}
+            </div>
+        @endif
+
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">{{ trans('adminlte::adminlte.login_message') }}</p>
-            <form action="{{ url(config('adminlte.login_url', 'login')) }}" method="post">
+            
+            <form action="{{ url(config('adminlte.' . $guard . '.login_url', 'login')) }}" method="post">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
@@ -56,12 +85,12 @@
                 </div>
             </form>
             <div class="auth-links">
-                <a href="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}"
+                <a href="{{ url(config('adminlte.' . $guard . '.password_reset_url', 'password/reset')) }}"
                    class="text-center"
                 >{{ trans('adminlte::adminlte.i_forgot_my_password') }}</a>
                 <br>
-                @if (config('adminlte.register_url', 'register'))
-                    <a href="{{ url(config('adminlte.register_url', 'register')) }}"
+                @if (config('adminlte.' . $guard . '.register_url', 'register'))
+                    <a href="{{ url(config('adminlte.' . $guard . '.register_url', 'register')) }}"
                        class="text-center"
                     >{{ trans('adminlte::adminlte.register_a_new_membership') }}</a>
                 @endif

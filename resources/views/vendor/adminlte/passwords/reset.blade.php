@@ -7,15 +7,23 @@
 
 @section('body_class', 'login-page')
 
+@php
+    $guard = str_contains(url()->current(),'admin') ? 'admin' : 'access';
+@endphp
+
 @section('body')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
+            <img src="{{ asset('img/mm-logo.png') }}" style="max-width: 100%;" />
+            <span class="clearfix"></span>
+            <br/>
+            <a href="{{ url(config('adminlte.' . $guard . '.dashboard_url', 'home')) }}">{!! config('adminlte.' . $guard . '.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">{{ trans('adminlte::adminlte.password_reset_message') }}</p>
-            <form action="{{ url(config('adminlte.password_reset_url', 'password/reset')) }}" method="post">
+
+            <form action="{{ url(config('adminlte.' . $guard . '.password_reset_url', 'password/reset')) }}" method="post">
                 {!! csrf_field() !!}
 
                 <input type="hidden" name="token" value="{{ $token }}">

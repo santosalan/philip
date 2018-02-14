@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 2',
+    'title' => 'Tardis',
 
     'title_prefix' => '',
 
@@ -30,9 +30,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => 'Phl',
 
     /*
     |--------------------------------------------------------------------------
@@ -45,7 +43,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'red',
 
     /*
     |--------------------------------------------------------------------------
@@ -85,15 +83,46 @@ return [
     |
     */
 
-    'dashboard_url' => 'home',
 
-    'logout_url' => 'logout',
+    'access' => [
+        'logo' => '<b>Philip</b>',
 
-    'logout_method' => null,
+        'layout' => 'top-nav',
 
-    'login_url' => 'login',
+        'collapse_sidebar' => false,
 
-    'register_url' => 'register',
+        'dashboard_url' => 'access',
+
+        'logout_url' => 'access/logout',
+
+        'logout_method' => null,
+
+        'login_url' => 'access/login',
+
+        'register_url' => null,
+
+        'password_reset_url' => 'access/password/reset',
+
+        'password_email_url' => 'access/password/email',
+    ],
+
+    'admin' => [
+        'logo' => '<b>Philip</b><br><sup>Admin</sup>',
+
+        'dashboard_url' => 'admin/home',
+
+        'logout_url' => 'admin/logout',
+
+        'logout_method' => null,
+
+        'login_url' => 'admin/login',
+
+        'register_url' => null,
+
+        'password_reset_url' => 'admin/password/reset',
+
+        'password_email_url' => 'admin/password/email',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -108,81 +137,91 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'ADMINISTRAÇÃO',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text' => 'Dashboard',
+            'url'  => 'admin/home',
+            'icon' => 'dashboard',
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],
-        'ACCOUNT SETTINGS',
-        [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'text' => 'Sistemas',
+            'url'  => 'admin/sistemas',
+            'icon' => 'globe',
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
+            'text' => 'Usuários',
+            'url'  => 'admin/usuarios',
+            'icon' => 'users',
         ],
         [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'Level One',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'Level Two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'Level Two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'Level Three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'Level One',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'Administradores',
+            'url'  => 'admin/admins',
+            'icon' => 'user-circle',
         ],
-        'LABELS',
+        'LOGS',
         [
-            'text'       => 'Important',
-            'icon_color' => 'red',
+            'text' => 'Logs',
+            'url'  => 'admin/logs',
+            'icon' => 'cogs',
         ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
-        ],
+        // [
+        //     'text'        => 'Pages',
+        //     'url'         => 'admin/pages',
+        //     'icon'        => 'file',
+        //     'label'       => 4,
+        //     'label_color' => 'success',
+        // ],
+        // [
+        //     'text'    => 'Multilevel',
+        //     'icon'    => 'share',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'Level One',
+        //             'url'  => '#',
+        //         ],
+        //         [
+        //             'text'    => 'Level One',
+        //             'url'     => '#',
+        //             'submenu' => [
+        //                 [
+        //                     'text' => 'Level Two',
+        //                     'url'  => '#',
+        //                 ],
+        //                 [
+        //                     'text'    => 'Level Two',
+        //                     'url'     => '#',
+        //                     'submenu' => [
+        //                         [
+        //                             'text' => 'Level Three',
+        //                             'url'  => '#',
+        //                         ],
+        //                         [
+        //                             'text' => 'Level Three',
+        //                             'url'  => '#',
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //         ],
+        //         [
+        //             'text' => 'Level One',
+        //             'url'  => '#',
+        //         ],
+        //     ],
+        // ],
+        // 'LABELS',
+        // [
+        //     'text'       => 'Important',
+        //     'icon_color' => 'red',
+        // ],
+        // [
+        //     'text'       => 'Warning',
+        //     'icon_color' => 'yellow',
+        // ],
+        // [
+        //     'text'       => 'Information',
+        //     'icon_color' => 'aqua',
+        // ],
     ],
 
     /*
@@ -219,6 +258,5 @@ return [
     'plugins' => [
         'datatables' => true,
         'select2'    => true,
-        'chartjs'    => true,
     ],
 ];

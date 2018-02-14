@@ -7,15 +7,22 @@
 
 @section('body_class', 'register-page')
 
+@php
+    $guard = str_contains(url()->current(),'admin') ? 'admin' : 'access';
+@endphp
+
 @section('body')
     <div class="register-box">
         <div class="register-logo">
-            <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
+            <img src="{{ asset('img/mm-logo.png') }}" style="max-width: 100%;" />
+            <span class="clearfix"></span>
+            <br/>
+            <a href="{{ url(config('adminlte.' . $guard . '.dashboard_url', 'home')) }}">{!! config('adminlte.' . $guard . '.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
 
         <div class="register-box-body">
             <p class="login-box-msg">{{ trans('adminlte::adminlte.register_message') }}</p>
-            <form action="{{ url(config('adminlte.register_url', 'register')) }}" method="post">
+            <form action="{{ url(config('adminlte.' . $guard . '.register_url', 'register')) }}" method="post">
                 {!! csrf_field() !!}
 
                 <div class="form-group has-feedback {{ $errors->has('name') ? 'has-error' : '' }}">
@@ -63,7 +70,7 @@
                 >{{ trans('adminlte::adminlte.register') }}</button>
             </form>
             <div class="auth-links">
-                <a href="{{ url(config('adminlte.login_url', 'login')) }}"
+                <a href="{{ url(config('adminlte.' . $guard . '.login_url', 'login')) }}"
                    class="text-center">{{ trans('adminlte::adminlte.i_already_have_a_membership') }}</a>
             </div>
         </div>
